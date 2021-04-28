@@ -1,0 +1,14 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: express-rate-limit
+    versions:
+    - 5.2.3
+  - dependency-name: handlebars
+    versions:
+    - 4.7.6
